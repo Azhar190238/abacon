@@ -1,12 +1,4 @@
 import React from 'react'
-import HeroSection from '../components/landing/home/hero'
-import AdvertisementBanner from '../components/landing/home/advertisementBanner'
-import TopCategories from '../components/landing/home/topCategories'
-import FlashSale from '../components/landing/home/flashSale'
-import Promotion from '../components/landing/home/promotion'
-import OnlyforYou from '../components/landing/home/onlyforYou'
-import Topsells from '../components/landing/home/topsells'
-import TrandingEvent from '../components/landing/home/trandingEvent'
 
 
 async function getServerSideProps() {
@@ -34,25 +26,7 @@ export default async function Home() {
   const allCategories = data?.data ?.categories || []
   return (
     <div>
-      {/* <HeroSection />
-      <AdvertisementBanner />
-      <FlashSale />
-      <TopCategories categories={allCategories} />
-      <Promotion />
-      {Array.isArray(data?.data?.sections) && data?.data?.sections?.map((sectionObj, idx) => {
-        const section = sectionObj.section || {};
-        const hasMarketing = section?.marketing_link && section?.marketing_image;
-        if (hasMarketing) {
-          return (
-            <Topsells key={idx} section={sectionObj} />
-          );
-        } else {
-          return (
-            <OnlyforYou key={idx} section={sectionObj} />
-          );
-        }
-      })}
-      <TrandingEvent /> */}
+      
       <h3 className='text-2xl text-primary'>Home</h3>
       
     </div>

@@ -21,7 +21,7 @@ export const Loader = () => {
         <div className="inline-block">
             <InfinitySpin 
                 width="200"
-                color="#ea6b00" // Your garage orange color
+                color="#ea6b00"
             />
         </div>
     )
