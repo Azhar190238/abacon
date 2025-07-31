@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Free_Consultation() {
   return (
-    <section className="relative w-full h-[340px]">
+    <section className="relative w-full h-[440px]">
       {/* Background Image */}
       <Image
         src="/building.jpg" // Put your image in /public/building.jpg

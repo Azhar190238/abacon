@@ -3,10 +3,9 @@ import Image from "next/image";
 
 export default function Free_Consultation() {
   return (
-    <section className="relative w-full h-[240px]">
-      {/* Background Image */}
+    <section className="relative w-full h-[290px]">
       <Image
-        src="/building.jpg" // Put your image in /public/building.jpg
+        src="/building.jpg"
         alt="Building Background"
         layout="fill"
         objectFit="cover"
@@ -31,7 +30,7 @@ export default function Free_Consultation() {
           href="#contact"
           className="hidden md:inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded transition"
         >
-          Free Initial Consultation
+          Call Now!
         </a>
       </div>
     </section>
