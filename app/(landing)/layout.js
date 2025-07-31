@@ -1,4 +1,4 @@
-import  React from "react"
+import React from "react"
 import { Inter } from "next/font/google"
 import "../../styles/globals.css"
 import Navbar from "../components/layout/navbar"
@@ -18,14 +18,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-    <body
-      className='font-roboto '
-      suppressHydrationWarning
-    >
-        <Header/>
-         <Navbar /> 
-      {children}
-      <Footer />
+      <body
+        className='font-roboto '
+        suppressHydrationWarning
+      >
+        <Header />
+        <Navbar />
+        {children}
+        <Footer />
       </body>
     </html>
   )
