@@ -9,7 +9,7 @@ import Footer from "../components/landing/layout/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "ShopstickPro - Online Shopping",
+  title: "ABCON",
   description: "Shop for summer care products and more",
 }
 

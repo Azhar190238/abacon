@@ -58,7 +58,7 @@ const Navbar = () => {
                     <Link
                       href={sub.link}
                       key={j}
-                      className="block px-4 py-2 hover:bg-blue-100 text-[#1E2E8C]"
+                      className="block px-4 py-2 hover:bg-blue-100 whitespace-pre text-[#1E2E8C]"
                     >
                       {sub.label}
                     </Link>
