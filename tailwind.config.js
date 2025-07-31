@@ -21,6 +21,22 @@ module.exports = {
         textBody: "#2C2C2C",
         tertialText: "#A2A8AF",
       },
+            backgroundImage: {
+        'gradient-animated': 'linear-gradient(270deg, #1C72B5, #1E317E)',
+      },
+      animation: {
+        'gradient-x': 'gradientX 3s ease infinite',
+      },
+      keyframes: {
+        gradientX: {
+          '0%, 100%': {
+            backgroundPosition: '0% 50%',
+          },
+          '50%': {
+            backgroundPosition: '100% 50%',
+          },
+        },
+      },
     },
   },
   plugins: [],
