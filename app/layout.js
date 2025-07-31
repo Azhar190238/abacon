@@ -1,9 +1,7 @@
 import { Toaster } from "react-hot-toast";
 import "./globals.scss";
 import UserProviders from "./providers/userProvider";
-import I18nProvider from "./context/i18n";
 import SiteProviders from "./providers/siteProvider";
-import AuthModalProvider from "./providers/authmodalProvider";
 
 export const metadata = {
     title: "Martstick",

@@ -17,7 +17,7 @@
   --danger-color: #ef4444;
   --info-color: #3b82f6;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 body {
@@ -29,7 +29,7 @@ body {
 }
 
 .container {
-  @apply max-w-[1320px] mx-auto;
+  @apply max-w-[1120px] mx-auto;
 }
 
 .aid-container {

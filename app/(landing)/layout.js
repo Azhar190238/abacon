@@ -1,9 +1,9 @@
 import  React from "react"
 import { Inter } from "next/font/google"
 import "../../styles/globals.css"
-import TopBar from "../components/landing/layout/topbar"
-import Navbar from "../components/landing/layout/navber"
-import Footer from "../components/landing/layout/footer"
+import Navbar from "../components/layout/navbar"
+import Header from "../components/layout/header"
+
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -21,8 +21,8 @@ export default function RootLayout({
       className='font-roboto '
       suppressHydrationWarning
     >
-        {/* <TopBar />
-        <Navbar /> */}
+        <Header/>
+         <Navbar /> 
       {children}
       <Footer />
       </body>

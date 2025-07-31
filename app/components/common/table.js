@@ -8,7 +8,6 @@ import { useActionConfirm } from "@/app/helpers/hooks";
 import SearchInput from "./search";
 import { Loader } from "./loader";
 import Pagination from "./pagination";
-import { useI18n } from "@/app/context/i18n";
 
 const Table = ({
   columns,
@@ -35,7 +34,6 @@ const Table = ({
   const handleEditClick = (data) => {
     onEdit(data);
   };
-  const i18n= useI18n();
   const handleDeleteClick = async (data) => {
     if (isDemo === "demo") {
       message.warning("You cannot delete in demo version");
