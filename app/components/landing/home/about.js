@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <section className="w-full bg-gradient-to-r from-[#0b2e59] to-[#1c74b7] py-12">
+    <section className="w-full bg-gradient-to-r from-[#0b2e59] to-[#1c74b7]  overflow-hidden">
       <div className="max-w-[1230px] mx-auto px-4 md:flex items-center gap-10">
         
         {/* Left: Text */}
-        <div className="md:w-1/2 text-white">
+        <div className="md:w-1/2 text-white py-6">
           <h2 className="text-3xl font-bold mb-4">ABCON</h2>
           <p className="mb-4">
             ABCON is a Design, Civil and Structural specialists consulting firm with over
@@ -20,7 +20,7 @@ export default function AboutSection() {
             (Development Applications), CC (Construction Certificates), CDC (Complying Development Certificate),
             Engineering reports, solving structural problems and Stormwater Drainage Designs.
           </p>
-          <hr className="border-l-4 border-white w-10 mb-6" />
+          <hr className="border-l-4 border-white w-1 h-[60px] mb-6" />
 
           <h3 className="text-2xl font-semibold mb-3">About Us</h3>
           <p className="mb-4">
@@ -37,13 +37,13 @@ export default function AboutSection() {
         </div>
 
         {/* Right: Image */}
-        <div className="md:w-1/2 mt-8 md:mt-0 group overflow-hidden rounded-lg shadow-lg">
+        <div className="md:w-[900px] h-screen -mr-96 md:mt-0 group overflow-hidden relative  rounded-lg shadow-lg">
           <Image
             src="/building.jpg"
             alt="House"
-            width={700}
-            height={500}
-            className="transition-transform duration-500 group-hover:scale-110 object-cover w-full h-full"
+            width={1200}
+            height={1200}
+            className="transition-transform duration-500 group-hover:scale-110 object-cover w-[1200px] h-full"
           />
         </div>
       </div>
