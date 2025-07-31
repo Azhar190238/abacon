@@ -1,7 +1,4 @@
-import { Toaster } from "react-hot-toast";
 import "./globals.scss";
-import UserProviders from "./providers/userProvider";
-import SiteProviders from "./providers/siteProvider";
 
 export const metadata = {
     title: "Martstick",
@@ -12,16 +9,9 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body className="antialiased" suppressHydrationWarning>
-                {/* <AuthModalProvider>
-                <SiteProviders>
-                    <I18nProvider>
-                        <UserProviders> */}
+             
                             {children}
-                        {/* </UserProviders>
-                        <Toaster />
-                    </I18nProvider>
-                </SiteProviders>
-                </AuthModalProvider> */}
+                     
             </body>
         </html>
     );

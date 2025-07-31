@@ -6,7 +6,7 @@ export default function HeroSection() {
     <div className="relative w-full h-[675px] bg-cover bg-center text-white" style={{ backgroundImage: `url('/images/hero-bg.png')` }}>
       <div className="absolute inset-0 bg-blue-900 bg-opacity-80"></div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 flex flex-col justify-center h-full">
+      <div className="relative z-10 container mx-auto px-6 flex flex-col justify-center h-full">
         <h1 className="text-4xl md:text-6xl font-bold text-yellow-400 leading-tight">
           Building Design & <br />
           <span className="text-white">Engineering Solutions.</span>
