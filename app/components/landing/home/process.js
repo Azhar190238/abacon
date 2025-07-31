@@ -4,19 +4,19 @@ export default function ProcessSection() {
   const steps = [
     {
       title: "01. Site Analysis",
-      icon: "/icons/site-analysis.png",
+      icon: "/service/s1.webp",
     },
     {
       title: "02. Build Design",
-      icon: "/icons/build-design.png",
+      icon: "/service/s2.webp",
     },
     {
       title: "03. Engineering Solutions",
-      icon: "/icons/engineering-solutions.png",
+      icon: "/service/s3.webp",
     },
     {
       title: "04. Approvals + Certifications",
-      icon: "/icons/approvals.png",
+      icon: "/service/s4.png",
     },
   ];
 
@@ -25,30 +25,29 @@ export default function ProcessSection() {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 items-start">
         {/* Left Side - Steps */}
         <div className="flex-1">
-          <div className="flex items-center gap-4 mb-6">
-            <h2 className="text-2xl md:text-3xl font-semibold text-blue-900">ABCON Process</h2>
-            <div className="w-px h-8 bg-blue-900" />
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <h2 className="text-2xl md:text-3xl font-semibold text-center text-blue-900">ABCON Process</h2>
           </div>
-
+        <div className="border-l-4 border-l-blue-900 flex justify-center mx-auto  w-1 h-[60px] mb-6" />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {steps.map((step, index) => (
               <div
                 key={index}
-                className="border p-6 rounded-lg flex flex-col items-center text-center"
+                className="border p-6 rounded-lg flex flex-col items-center bg-[#F8F8F8] text-center"
               >
-                <Image src={step.icon} alt={step.title} width={40} height={40} />
-                <p className="mt-4 text-gray-700">{step.title}</p>
+                <Image src={step.icon} alt={step.title} width={60} height={60} />
+                <p className="mt-6 text-gray-700">{step.title}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Right Side - Logos */}
-        <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-left mt-32">
           <p className="text-sm text-gray-600 mb-4">ABCON are proud members of</p>
-          <div className="flex flex-col gap-6">
-            <Image src="/logos/bda.png" alt="Building Designers Australia" width={180} height={60} />
-            <Image src="/logos/ner.png" alt="Engineers Australia NER" width={180} height={60} />
+          <div className="flex gap-6">
+            <Image src="/service/BDA_Logo.jpg" alt="Building Designers Australia" width={280} height={200} />
+            <Image src="/service/NER_Logo.jpg" alt="Engineers Australia NER" width={280} height={200} />
           </div>
         </div>
       </div>
