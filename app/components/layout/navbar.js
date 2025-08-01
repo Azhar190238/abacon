@@ -32,7 +32,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full shadow-md border-b px-4 py-3 relative">
+    <div className="w-full border-b px-4 py-3 relative">
       <div className="container flex items-center justify-between">
         {/* Left Side: Logo + tagline */}
         <div className="flex items-center gap-2">
