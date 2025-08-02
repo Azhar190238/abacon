@@ -32,7 +32,7 @@ const Navbar = () => {
         { label: "Engineering", link: "/gallery-engineering" },
       ],
     },
-    { label: "Contact Us", link: "/contact" },
+    { label: "Contact Us", link: "/contact_us" },
   ];
 
   return (
