@@ -5,20 +5,25 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { IoCaretDownOutline } from "react-icons/io5";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   const menuItems = [
     { label: "Home", link: "/" },
     { label: "About Us", link: "/about" },
     {
       label: "Services",
+      link: "/service",
       submenu: [
-        { label: "Building Design Plans", link: "/services/1" },
-        { label: "Civil Engineering", link: "/services/2" },
-        { label: "Structural Engineering", link: "/services/3" },
-        { label: "Survey and Site Analysis", link: "/services/4" },
+        { label: "Building Design Plans", link: "/service_building" },
+        { label: "Civil Engineering", link: "/service_civil" },
+        { label: "Structural Engineering", link: "/service_structural" },
+        { label: "Survey and Site Analysis", link: "/service_survey" },
+        { label: "Certifications and Approvals", link: "/service_certification" },
+
       ],
     },
     {
@@ -34,7 +39,7 @@ const Navbar = () => {
   return (
     <div className="w-full border-b px-4 py-3 relative">
       <div className="container flex items-center justify-between">
-        {/* Left Side: Logo + tagline */}
+        {/* Logo */}
         <div className="flex items-center gap-2">
           <Image
             src="/logo.png"
@@ -47,34 +52,64 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-6">
-          {menuItems.map((item, i) =>
-            item.submenu ? (
+          {menuItems.map((item, i) => {
+            const isActive =
+              pathname === item.link ||
+              (item.submenu &&
+                item.submenu.some((sub) => pathname.startsWith(sub.link)));
+
+            return item.submenu ? (
               <div key={i} className="group relative">
-                <button className="flex items-center font-semibold text-[#1E2E8C] hover:text-blue-600">
-                  {item.label} <IoCaretDownOutline className="ml-1 text-xs" />
-                </button>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    className={`flex items-center font-semibold ${
+                      isActive ? "text-red-600" : "text-[#1E2E8C] hover:text-blue-600"
+                    }`}
+                  >
+                    {item.label}
+                    <IoCaretDownOutline className="ml-1 text-xs" />
+                  </Link>
+                ) : (
+                  <button
+                    className={`flex items-center font-semibold ${
+                      isActive ? "text-red-600" : "text-[#1E2E8C] hover:text-blue-600"
+                    }`}
+                  >
+                    {item.label}
+                    <IoCaretDownOutline className="ml-1 text-xs" />
+                  </button>
+                )}
                 <div className="absolute top-full left-0 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300 z-50 min-w-[160px]">
                   {item.submenu.map((sub, j) => (
                     <Link
                       href={sub.link}
                       key={j}
-                      className="block px-4 py-2 hover:bg-blue-100 whitespace-pre text-[#1E2E8C]"
+                      className={`block px-4 py-2 hover:bg-blue-100 whitespace-pre ${
+                        pathname === sub.link ? "text-red-600" : "text-[#1E2E8C]"
+                      }`}
                     >
                       {sub.label}
                     </Link>
                   ))}
                 </div>
               </div>
-            ) : (
+            ) : item.link ? (
               <Link
                 key={i}
                 href={item.link}
-                className="font-semibold text-[#1E2E8C] hover:text-blue-600"
+                className={`font-semibold ${
+                  isActive ? "text-red-600" : "text-[#1E2E8C] hover:text-blue-600"
+                }`}
               >
                 {item.label}
               </Link>
-            )
-          )}
+            ) : (
+              <span key={i} className="font-semibold text-[#1E2E8C]">
+                {item.label}
+              </span>
+            );
+          })}
 
           {/* Phone Button */}
           <a
@@ -89,7 +124,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Mobile Menu Icon */}
+        {/* Mobile Menu Button */}
         <Button
           type="text"
           className="lg:hidden"
@@ -98,44 +133,75 @@ const Navbar = () => {
         />
       </div>
 
-      {/* Drawer for mobile */}
+      {/* Drawer Menu (Mobile) */}
       <Drawer
         title="Menu"
         placement="right"
         onClose={() => setOpen(false)}
         open={open}
       >
-        {menuItems.map((item, i) => (
-          <div key={i} className="mb-4">
-            {item.submenu ? (
-              <details>
-                <summary className="font-semibold cursor-pointer">
+        {menuItems.map((item, i) => {
+          const isActive =
+            pathname === item.link ||
+            (item.submenu &&
+              item.submenu.some((sub) => pathname.startsWith(sub.link)));
+
+          return (
+            <div key={i} className="mb-4">
+              {item.submenu ? (
+                <details open={isActive}>
+                  <summary
+                    className={`font-semibold cursor-pointer ${
+                      isActive ? "text-red-600" : "text-gray-800"
+                    }`}
+                  >
+                    {item.link ? (
+                      <Link
+                        href={item.link}
+                        onClick={() => setOpen(false)}
+                        className="inline-block w-full"
+                      >
+                        {item.label}
+                      </Link>
+                    ) : (
+                      <span>{item.label}</span>
+                    )}
+                  </summary>
+                  <div className="ml-4 mt-2 space-y-1">
+                    {item.submenu.map((sub, j) => (
+                      <Link
+                        key={j}
+                        href={sub.link}
+                        onClick={() => setOpen(false)}
+                        className={`block text-sm hover:underline ${
+                          pathname === sub.link
+                            ? "text-red-600"
+                            : "text-blue-700"
+                        }`}
+                      >
+                        {sub.label}
+                      </Link>
+                    ))}
+                  </div>
+                </details>
+              ) : item.link ? (
+                <Link
+                  href={item.link}
+                  onClick={() => setOpen(false)}
+                  className={`block font-semibold ${
+                    isActive ? "text-red-600" : "text-gray-800"
+                  }`}
+                >
                   {item.label}
-                </summary>
-                <div className="ml-4 mt-2 space-y-1">
-                  {item.submenu.map((sub, j) => (
-                    <Link
-                      key={j}
-                      href={sub.link}
-                      onClick={() => setOpen(false)}
-                      className="block text-sm text-blue-700 hover:underline"
-                    >
-                      {sub.label}
-                    </Link>
-                  ))}
-                </div>
-              </details>
-            ) : (
-              <Link
-                href={item.link}
-                onClick={() => setOpen(false)}
-                className="block font-semibold"
-              >
-                {item.label}
-              </Link>
-            )}
-          </div>
-        ))}
+                </Link>
+              ) : (
+                <span className="block font-semibold text-gray-800">
+                  {item.label}
+                </span>
+              )}
+            </div>
+          );
+        })}
         <div className="mt-4">
           <a
             href="tel:(02) 8768 0561"
