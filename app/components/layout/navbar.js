@@ -18,19 +18,18 @@ const Navbar = () => {
       label: "Services",
       link: "/service",
       submenu: [
-        { label: "Building Design Plans", link: "/service_building" },
-        { label: "Civil Engineering", link: "/service_civil" },
-        { label: "Structural Engineering", link: "/service_structural" },
-        { label: "Survey and Site Analysis", link: "/service_survey" },
-        { label: "Certifications and Approvals", link: "/service_certification" },
-
+        { label: "Building Design Plans", link: "/services/architectural-building-plans" },
+        { label: "Civil Engineering", link: "/services/civil-engineering" },
+        { label: "Structural Engineering", link: "/services/structural-engineering" },
+        { label: "Survey and Site Analysis", link: "/services/survey-and-site-analysis" },
+        { label: "Certifications and Approvals", link: "/services/certifications-and-approvals" },
       ],
     },
     {
       label: "Gallery",
       submenu: [
-        { label: "Gallery 1", link: "/gallery/1" },
-        { label: "Gallery 2", link: "/gallery/2" },
+        { label: "Building Design", link: "/gallery-architecture" },
+        { label: "Engineering", link: "/gallery-engineering" },
       ],
     },
     { label: "Contact Us", link: "/contact" },
