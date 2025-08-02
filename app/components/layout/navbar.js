@@ -15,10 +15,11 @@ const Navbar = () => {
     {
       label: "Services",
       submenu: [
-        { label: "Building Design Plans", link: "/services/1" },
-        { label: "Civil Engineering", link: "/services/2" },
-        { label: "Structural Engineering", link: "/services/3" },
-        { label: "Survey and Site Analysis", link: "/services/4" },
+        { label: "Building Design Plans", link: "/services/architectural-building-plans" },
+        { label: "Civil Engineering", link: "/services/civil-engineering" },
+        { label: "Structural Engineering", link: "/services/structural-engineering" },
+        { label: "Survey and Site Analysis", link: "/services/survey-and-site-analysis" },
+        { label: "Certifications and Approvals", link: "/services/certifications-and-approvals" },
       ],
     },
     {
