@@ -25,8 +25,8 @@ const Navbar = () => {
     {
       label: "Gallery",
       submenu: [
-        { label: "Gallery 1", link: "/gallery/1" },
-        { label: "Gallery 2", link: "/gallery/2" },
+        { label: "Building Design", link: "/gallery-architecture" },
+        { label: "Engineering", link: "/gallery-engineering" },
       ],
     },
     { label: "Contact Us", link: "/contact" },
