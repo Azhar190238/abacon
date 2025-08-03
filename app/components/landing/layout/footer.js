@@ -106,7 +106,7 @@ const Footer = () => {
                   Saturday: By appointment only <br />
                   Sunday: Closed
                   <p className="my-3 h-[1px] w-full bg-slate-300"></p>
-                  <Link href={"/privacy"}>Privacy Policy</Link>
+                  <Link href={"/privacy_policy"}>Privacy Policy</Link>
                 </div>
               </div>
 
