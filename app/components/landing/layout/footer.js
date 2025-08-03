@@ -22,21 +22,18 @@ const Footer = () => {
   }, []);
 
   const navLinks1 = [
-    { name: "Home", link: "/doctor" },
-    { name: "About Us", link: "/diagnostic" },
-    { name: "Services", link: "/blood" },
-    { name: "Building Design", link: "/dental" },
-    { name: "Plans", link: "/ambulance" },
-    { name: "Civil Engineering", link: "/pharmacy" },
-    { name: "Structural", link: "/pharmacy" },
-    { name: "Engineering", link: "/pharmacy" },
-    { name: "Survey and Site", link: "/pharmacy" },
-    { name: "Analysis", link: "/pharmacy" },
-    { name: "Certifications and Approvals", link: "/pharmacy" },
-    { name: "Gallery", link: "/pharmacy" },
-    { name: "Building Design", link: "/pharmacy" },
-    { name: "Engineering", link: "/pharmacy" },
-    { name: "Contact Us", link: "/pharmacy" },
+    { name: "Home", link: "/" },
+    { name: "About Us", link: "/about" },
+    { name: "Services", link: "/our-services" },
+    { name: "Building Design Plans", link: "/services/architectural-building-plans" },
+    { name: "Civil Engineering", link: "/services/civil-engineering" },
+    { name: "Structural Engineering", link: "/services/structural-engineering" },
+    { name: "Survey and Site Analysis", link: "/services/survey-and-site-analysis" },
+    { name: "Certifications and Approvals", link: "/services/certifications-and-approvals" },
+    { name: "Gallery", link: "/gallery-architecture" },
+    { name: "Building Design", link: "/gallery-engineering" },
+    { name: "Engineering", link: "/gallery-engineering" },
+    { name: "Contact Us", link: "/contact_us" },
   ];
 
   const navLinks2 = [
@@ -95,7 +92,7 @@ const Footer = () => {
                 <ul className="mt-5">
                   {navLinks1.map((item, index) => (
                     <li key={index} className="flex flex-col items-center sm:items-start last:mb-6 mt-2 descruiption1 text-black/90 hover:text-black cursor-pointer">
-                      <Link target="_blank" className="text-center" href={item.link}>{item.name}</Link>
+                      <Link className="text-center" href={item.link}>{item.name}</Link>
                     </li>
                   ))}
                 </ul>
