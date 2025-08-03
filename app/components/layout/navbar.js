@@ -16,7 +16,7 @@ const Navbar = () => {
     { label: "About Us", link: "/about" },
     {
       label: "Services",
-      link: "/service",
+      link: "/our-services",
       submenu: [
         { label: "Building Design Plans", link: "/services/architectural-building-plans" },
         { label: "Civil Engineering", link: "/services/civil-engineering" },
