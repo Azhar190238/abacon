@@ -38,11 +38,74 @@ export default function About() {
             />
           </div>
         </div>
-        <div className="-mt-10">
-          <div className="h-5 w-2 bg-"></div>
+        <div className="mt-4 lg:mt-0 xl:-mt-20 ">
+          <div className="h-10 w-[1px] bg-[#30408B] md:flex hidden"></div>
+          <p className="text-[#30408B] font-semibold text-lg mt-4">
+            At ABCON, we provide clients with a complete package of building design services. <br />
+            We take the project from conception to approval. procuring all the necessary <br /> documentation.
+            This streamlines the entire design process. <br />
+          </p>
+        </div>
+
+        <div className="mt-12 md:mt-14 lg:mt-16 xl:mt-20">
+          <div className="relative w-full h-auto py-12 md:py-20 px-4 md:px-12 text-white">
+            {/* Background Image */}
+            <div className="absolute inset-0">
+              <Image
+                src="/building.jpg"
+                alt="Building Background"
+                layout="fill"
+                objectFit="cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#0465c3] to-[#273b87] opacity-95 z-10" />
+            </div>
+
+            {/* Content */}
+            <div className="relative z-20 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+              {/* Left Column */}
+              <div className="md:w-1/3">
+                <h2 className="text-yellow-400 font-bold text-2xl md:text-3xl leading-tight text-center">
+                  What our <br />
+                  Customers say
+                </h2>
+              </div>
+
+              {/* Center Testimonial */}
+              <div className="md:w-1/3 space-y-4">
+                <p className="text-sm md:text-base leading-relaxed text-center">
+                  Thank you, ABCON, for your helping building my granny flat. you guys
+                  looked after my drawing and the approvals. Couldn’t have done it
+                  Without you. Thanks!
+                </p>
+                <p className="text-yellow-400 font-semibold text-center !mt-20">Gurkan Topal</p>
+              </div>
+
+              {/* Right Testimonial */}
+              <div className="md:w-1/3 space-y-4">
+                <p className="text-sm md:text-base leading-relaxed text-center">
+                  I just wanted to thankyou for your excellent service and professionalism,
+                  on helping create our dream home design. You made the process so easy
+                  and stress free. Your attention to detail and design process is nothing
+                  short of outstanding. Thankyou once again
+                </p>
+                <p className="text-yellow-400 font-semibold text-center !mt-3">Sam and Enass</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div className="mt-10">
+          <div className="">
+            <div className="flex items-center justify-center gap-6">
+              <Image src="/service/BDA_Logo.jpg" alt="Building Designers Australia" width={280} height={200} />
+              <Image src="/service/NER_Logo.jpg" alt="Engineers Australia NER" width={280} height={200} />
+            </div>
+          </div>
         </div>
       </div>
-      {/* <Free_Consultation/> */}
+      <Free_Consultation/>
     </main>
   );
 }
