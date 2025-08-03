@@ -125,8 +125,6 @@ const Navbar = () => {
           onClick={() => setOpen(true)}
         />
       </div>
-
-      {/* Drawer Menu (Mobile) */}
       <Drawer
         title="Menu"
         placement="right"
