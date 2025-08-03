@@ -39,12 +39,13 @@ export default function ServicesSection() {
     <section className="w-full bg-gray-100 py-16">
       <div className="max-w-[1230px] mx-auto px-4">
         {/* Title */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-blue-900">Our Services</h2>
           <p className="text-gray-600 mt-2 max-w-xl mx-auto">
             Below are some of our services ranging from Engineering and Architectural Building Design. Click on the below to find out more information.
           </p>
         </div>
+        <hr className="border-l-[2px] mx-auto border-blue-900 w-[2px] h-[60px] mb-6" />
 
         {/* Service Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

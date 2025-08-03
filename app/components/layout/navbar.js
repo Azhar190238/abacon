@@ -63,7 +63,7 @@ const Navbar = () => {
                   <Link
                     href={item.link}
                     className={`flex items-center font-semibold ${
-                      isActive ? "text-red-600" : "text-[#1E2E8C] hover:text-blue-600"
+                      isActive ? "text-blue-600" : "text-[#1E2E8C] hover:text-blue-600"
                     }`}
                   >
                     {item.label}
@@ -72,7 +72,7 @@ const Navbar = () => {
                 ) : (
                   <button
                     className={`flex items-center font-semibold ${
-                      isActive ? "text-red-600" : "text-[#1E2E8C] hover:text-blue-600"
+                      isActive ? "text-blue-600" : "text-[#1E2E8C] hover:text-blue-600"
                     }`}
                   >
                     {item.label}
@@ -85,7 +85,7 @@ const Navbar = () => {
                       href={sub.link}
                       key={j}
                       className={`block px-4 py-2 hover:bg-blue-100 whitespace-pre ${
-                        pathname === sub.link ? "text-red-600" : "text-[#1E2E8C]"
+                        pathname === sub.link ? "text-blue-600" : "text-[#1E2E8C]"
                       }`}
                     >
                       {sub.label}
@@ -98,7 +98,7 @@ const Navbar = () => {
                 key={i}
                 href={item.link}
                 className={`font-semibold ${
-                  isActive ? "text-red-600" : "text-[#1E2E8C] hover:text-blue-600"
+                  isActive ? "text-blue-600" : "text-[#1E2E8C] hover:text-blue-600"
                 }`}
               >
                 {item.label}
@@ -151,7 +151,7 @@ const Navbar = () => {
                 <details open={isActive}>
                   <summary
                     className={`font-semibold cursor-pointer ${
-                      isActive ? "text-red-600" : "text-gray-800"
+                      isActive ? "text-blue-600" : "text-gray-800"
                     }`}
                   >
                     {item.link ? (
@@ -174,7 +174,7 @@ const Navbar = () => {
                         onClick={() => setOpen(false)}
                         className={`block text-sm hover:underline ${
                           pathname === sub.link
-                            ? "text-red-600"
+                            ? "text-blue-600"
                             : "text-blue-700"
                         }`}
                       >
@@ -188,7 +188,7 @@ const Navbar = () => {
                   href={item.link}
                   onClick={() => setOpen(false)}
                   className={`block font-semibold ${
-                    isActive ? "text-red-600" : "text-gray-800"
+                    isActive ? "text-blue-600" : "text-gray-800"
                   }`}
                 >
                   {item.label}
