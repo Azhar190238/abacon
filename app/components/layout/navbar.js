@@ -48,8 +48,6 @@ const Navbar = () => {
             className="h-16 w-[180px]"
           />
         </div>
-
-        {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-6">
           {menuItems.map((item, i) => {
             const isActive =
@@ -109,8 +107,6 @@ const Navbar = () => {
               </span>
             );
           })}
-
-          {/* Phone Button */}
           <a
             href="tel:(02) 8768 0561"
             className="relative inline-flex items-center justify-center px-5 py-2 rounded-full font-semibold text-white
@@ -122,8 +118,6 @@ const Navbar = () => {
             (02) 8768 0561
           </a>
         </div>
-
-        {/* Mobile Menu Button */}
         <Button
           type="text"
           className="lg:hidden"
@@ -150,7 +144,7 @@ const Navbar = () => {
               {item.submenu ? (
                 <details open={isActive}>
                   <summary
-                    className={`font-semibold cursor-pointer ${
+                    className={`font-semibold cursor-pointer whitespace-pre ${
                       isActive ? "text-blue-600" : "text-gray-800"
                     }`}
                   >
@@ -158,9 +152,9 @@ const Navbar = () => {
                       <Link
                         href={item.link}
                         onClick={() => setOpen(false)}
-                        className="inline-block w-full"
+                        className=" w-full"
                       >
-                        {item.label}
+                        { item.label}
                       </Link>
                     ) : (
                       <span>{item.label}</span>
