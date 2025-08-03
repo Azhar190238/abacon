@@ -22,7 +22,7 @@ export default function HeroSection() {
           </p>
 
         <div className="mt-6 flex gap-4">
-          <button className="bg-yellow-400 text-black font-semibold px-6 py-2 rounded hover:bg-white transition">
+          <button className="bg-[#FFF12C] text-black font-semibold px-6 py-2 rounded hover:bg-white transition">
             Call Now!
           </button>
           <button className="border border-white text-white px-6 py-2 rounded hover:bg-white hover:text-blue-900 transition">

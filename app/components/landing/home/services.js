@@ -36,7 +36,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="w-full bg-gray-100 py-16">
+    <section className="w-full">
       <div className="max-w-[1230px] mx-auto px-4">
         {/* Title */}
         <div className="text-center mb-8">
@@ -52,7 +52,7 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded shadow hover:shadow-lg transition duration-300 border-l-4 border-blue-900"
+              className="bg-[#F8F8F8] group p-6 rounded shadow hover:shadow-lg transition duration-300 border-l-4 border-blue-900"
             >
               <div className="mb-4">
                 <Image
@@ -60,7 +60,7 @@ export default function ServicesSection() {
                   alt={service.title}
                   width={80}
                   height={80}
-                  className="object-contain mx-auto"
+                  className="object-contain mx-auto group-hover:scale-110 transition-all duration-300"
                 />
               </div>
               <h3 className="text-xl font-semibold text-blue-900 mb-3 text-center">{service.title}</h3>
@@ -68,24 +68,24 @@ export default function ServicesSection() {
             </div>
           ))}
           <div
-              
-              className="bg-white p-6 flex flex-col justify-center items-center rounded shadow bg-gradient-to-r from-[#1C72B5] to-[#1E317E] 
+
+            className="bg-white p-6 flex flex-col justify-center items-center rounded shadow bg-gradient-to-r from-[#1C72B5] to-[#1E317E] 
              bg-[length:200%_200%] transition-all duration-500 ease-in-out
-             hover:animate-gradient-x hover:shadow-lg transition duration-300 border-l-4 border-blue-900"
-            >
-              <div className="mb-4 flex items-center justify-center">
-                <Image
-                  src= "/service/s6.png"
-                  alt="call"
-                  width={60}
-                  height={60}
-                  className="object-contain mx-auto"
-                />
-              </div>
-              <h3 className="text-xl font-semibold text-[#91B276] mb-3 text-center">Contact Us</h3>
+             hover:animate-gradient-x hover:shadow-lg border-l-4 border-blue-900"
+          >
+            <div className="mb-4 flex items-center justify-center">
+              <Image
+                src="/service/s6.png"
+                alt="call"
+                width={60}
+                height={60}
+                className="object-contain mx-auto"
+              />
             </div>
+            <h3 className="text-xl font-semibold text-[#91B276] mb-3 text-center">Contact Us</h3>
+          </div>
         </div>
-        
+
       </div>
     </section>
   );

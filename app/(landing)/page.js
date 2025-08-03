@@ -11,16 +11,20 @@ import Free_Initial from '../components/landing/home/free_initial'
 export default async function Home() {
 
   return (
-    <div className=' flex flex-col space-y-6'>
-       <HeroSection/>
-       <BenefitsSection/>
-       <AboutSection/>
-       <ServicesSection/>
-       <Free_Consultation/>
-       <ProcessSection/>
-       <Gallery/>
-       <Free_Initial/>
-       <TextSection />
+    <div className=' flex flex-col'>
+      <HeroSection />
+      <BenefitsSection />
+      <AboutSection />
+      <div className='my-5 md:my-8 xl:my-10'>
+        <ServicesSection />
+      </div>
+      <Free_Consultation />
+      <ProcessSection />
+      <Gallery />
+      <Free_Initial />
+      <div className='mt-5 md:mt-8 xl:mt-10'>
+        <TextSection />
+      </div>
     </div>
   )
 }

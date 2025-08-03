@@ -44,7 +44,7 @@ export default function ProcessSection() {
 
         {/* Right Side - Logos */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left mt-32">
-          <p className="text-sm text-gray-600 mb-4">ABCON are proud members of</p>
+          <p className="text-sm text-gray-600 mb-4 mx-auto">ABCON are proud members of</p>
           <div className="flex gap-6">
             <Image src="/service/BDA_Logo.jpg" alt="Building Designers Australia" width={280} height={200} />
             <Image src="/service/NER_Logo.jpg" alt="Engineers Australia NER" width={280} height={200} />

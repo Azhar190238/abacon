@@ -1,22 +1,22 @@
 import Image from "next/image";
 
 const images = [
-  { src: "/building.jpg", title: "Modern House" },
-  { src: "/building.jpg", title: "Master Bedroom" },
-  { src: "/building.jpg", title: "Classic Villa" },
-  { src: "/building.jpg", title: "Poolside Lounge" },
-  { src: "/building.jpg", title: "Office Space" },
-  { src: "/building.jpg", title: "Apartment Complex" },
-  { src: "/building.jpg", title: "Sunroom Design" },
-  { src: "/building.jpg", title: "Luxury Bathroom" },
+  { src: "/gallery/i1.png", title: "Modern House" },
+  { src: "/gallery/i2.png", title: "Master Bedroom" },
+  { src: "/gallery/i3.png", title: "Classic Villa" },
+  { src: "/gallery/i4.png", title: "Poolside Lounge" },
+  { src: "/gallery/i5.png", title: "Office Space" },
+  { src: "/gallery/i6.png", title: "Apartment Complex" },
+  { src: "/gallery/i7.png", title: "Sunroom Design" },
+  { src: "/gallery/i8.jpg", title: "Luxury Bathroom" },
 ];
 
 export default function Gallery() {
   return (
     <section className=" bg-white -mb-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {images.map((img, idx) => (
-          <div key={idx} className="relative group overflow-hidden rounded-lg shadow-md">
+          <div key={idx} className="relative group overflow-hidden shadow-md">
             <Image
               src={img.src}
               alt={img.title}

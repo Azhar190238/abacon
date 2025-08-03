@@ -21,7 +21,7 @@ export default function Free_Consultation() {
         <div className="text-white max-w-2xl">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">ABCON</h2>
           <hr className="border-l-2 border-white w-[2px] h-[40px] mb-4" />
-          <p className="text-lg md:text-xl leading-snug">
+          <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl leading-snug">
             Over 10 years of experience <br /> conducting work in Building Design, <br />
             Civil and Structural Engineering.
           </p>
@@ -29,7 +29,7 @@ export default function Free_Consultation() {
 
         <a
           href="#contact"
-          className="hidden md:inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded transition"
+          className="hidden md:inline-block bg-[#E4D829] hover:bg-[#F4F4F4] text-black font-semibold px-6 py-3 rounded transition"
         >
           Free Initial Consultation
         </a>

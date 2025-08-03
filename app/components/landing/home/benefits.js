@@ -3,21 +3,18 @@ import Image from "next/image";
 
 export default function BenefitsSection() {
   return (
-    <section className="w-full bg-white py-6">
+    <section className="w-full my-10 md:my-14 lg:my-20 xl:my-[120px]">
       <div className="max-w-[1230px] mx-auto px-4">
-
-        {/* Benefits Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          
-          {/* Benefit 1 */}
-          <div className="p-6 border-l-4 border-blue-900 bg-blue-50 rounded hover:shadow-lg transition duration-300 ease-in-out">
-            {/* Logo/Icon */}
+        
+          <div className="p-6 rounded">
             <div className="mb-4">
               <Image
-                src="/logo1.png" // Replace with your own icon
+                src="/logo1.png" 
                 alt="Interior Expertise"
                 width={50}
                 height={50}
+                className="hover:scale-125 transition-all duration-300"
               />
             </div>
 
@@ -32,14 +29,14 @@ export default function BenefitsSection() {
           </div>
 
           {/* Benefit 2 */}
-          <div className="p-6 border-l-4 border-blue-900 bg-blue-50 rounded hover:shadow-lg transition duration-300 ease-in-out">
-            {/* Logo/Icon */}
+          <div className=" rounded ">
             <div className="mb-4">
               <Image
-                src="/logo2.webp" // Replace with your own icon
+                src="/logo2.webp" 
                 alt="Free Consultation"
                 width={50}
                 height={50}
+                className="hover:scale-125 transition-all duration-300"
               />
             </div>
 
