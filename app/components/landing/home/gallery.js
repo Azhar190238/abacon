@@ -13,7 +13,7 @@ const images = [
 
 export default function Gallery() {
   return (
-    <section className=" bg-white -mb-8">
+    <section className=" bg-white -mb-8 overflow-x-hidden">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {images.map((img, idx) => (
           <div key={idx} className="relative group overflow-hidden shadow-md">

@@ -41,13 +41,13 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <Link href={"/"}>
-          <Image
-            src="/logo.png"
-            alt="Logo"
-            width={180}
-            height={65}
-            className="h-16 w-[180px]"
-          />
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={180}
+              height={65}
+              className="h-16 w-[180px]"
+            />
           </Link>
         </div>
         <div className="hidden lg:flex items-center gap-6">
@@ -62,18 +62,16 @@ const Navbar = () => {
                 {item.link ? (
                   <Link
                     href={item.link}
-                    className={`flex items-center font-semibold ${
-                      isActive ? "text-blue-600" : "text-[#1E2E8C] hover:text-blue-600"
-                    }`}
+                    className={`flex items-center font-semibold ${isActive ? "text-blue-600" : "text-[#1E2E8C] hover:text-blue-600"
+                      }`}
                   >
                     {item.label}
                     <IoCaretDownOutline className="ml-1 text-xs" />
                   </Link>
                 ) : (
                   <button
-                    className={`flex items-center font-semibold ${
-                      isActive ? "text-blue-600" : "text-[#1E2E8C] hover:text-blue-600"
-                    }`}
+                    className={`flex items-center font-semibold ${isActive ? "text-blue-600" : "text-[#1E2E8C] hover:text-blue-600"
+                      }`}
                   >
                     {item.label}
                     <IoCaretDownOutline className="ml-1 text-xs" />
@@ -84,9 +82,8 @@ const Navbar = () => {
                     <Link
                       href={sub.link}
                       key={j}
-                      className={`block px-4 py-2 hover:bg-blue-100 whitespace-pre ${
-                        pathname === sub.link ? "text-blue-600" : "text-[#1E2E8C]"
-                      }`}
+                      className={`block px-4 py-2 hover:bg-blue-100 whitespace-pre ${pathname === sub.link ? "text-blue-600" : "text-[#1E2E8C]"
+                        }`}
                     >
                       {sub.label}
                     </Link>
@@ -97,9 +94,8 @@ const Navbar = () => {
               <Link
                 key={i}
                 href={item.link}
-                className={`font-semibold ${
-                  isActive ? "text-blue-600" : "text-[#1E2E8C] hover:text-blue-600"
-                }`}
+                className={`font-semibold ${isActive ? "text-blue-600" : "text-[#1E2E8C] hover:text-blue-600"
+                  }`}
               >
                 {item.label}
               </Link>
@@ -112,9 +108,10 @@ const Navbar = () => {
           <a
             href="tel:(02) 8768 0561"
             className="relative inline-flex items-center justify-center px-5 py-2 rounded-full font-semibold text-white
-             bg-gradient-to-r from-[#1C72B5] to-[#1E317E] 
-             bg-[length:200%_200%] transition-all duration-500 ease-in-out
-             hover:animate-gradient-x"
+             bg-gradient-to-r from-[#1C72B5] to-[#1E317E]
+             transition-all duration-500 ease-in-out
+             before:absolute before:-inset-[2px] before:rounded-full before:bg-gradient-to-r before:from-purple-400 before:via-pink-500 before:to-red-500
+             before:bg-[length:200%_200%] before:animate-gradient-x before:z-[-1]"
           >
             <PhoneOutlined className="mr-2" />
             (02) 8768 0561
@@ -144,9 +141,8 @@ const Navbar = () => {
               {item.submenu ? (
                 <details open={isActive}>
                   <summary
-                    className={`font-semibold cursor-pointer whitespace-pre ${
-                      isActive ? "text-blue-600" : "text-gray-800"
-                    }`}
+                    className={`font-semibold cursor-pointer whitespace-pre ${isActive ? "text-blue-600" : "text-gray-800"
+                      }`}
                   >
                     {item.link ? (
                       <Link
@@ -154,7 +150,7 @@ const Navbar = () => {
                         onClick={() => setOpen(false)}
                         className=" w-full"
                       >
-                        { item.label}
+                        {item.label}
                       </Link>
                     ) : (
                       <span>{item.label}</span>
@@ -166,11 +162,10 @@ const Navbar = () => {
                         key={j}
                         href={sub.link}
                         onClick={() => setOpen(false)}
-                        className={`block text-sm hover:underline ${
-                          pathname === sub.link
-                            ? "text-blue-600"
-                            : "text-blue-700"
-                        }`}
+                        className={`block text-sm hover:underline ${pathname === sub.link
+                          ? "text-blue-600"
+                          : "text-blue-700"
+                          }`}
                       >
                         {sub.label}
                       </Link>
@@ -181,9 +176,8 @@ const Navbar = () => {
                 <Link
                   href={item.link}
                   onClick={() => setOpen(false)}
-                  className={`block font-semibold ${
-                    isActive ? "text-blue-600" : "text-gray-800"
-                  }`}
+                  className={`block font-semibold ${isActive ? "text-blue-600" : "text-gray-800"
+                    }`}
                 >
                   {item.label}
                 </Link>

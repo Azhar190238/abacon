@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import AnimatedContent from "../../ui/animatedContent";
 
 const services = [
   {
@@ -37,60 +38,68 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="w-full">
+    <section className="w-full overflow-x-hidden">
       <div className="max-w-[1230px] mx-auto px-4">
         {/* Title */}
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-blue-900">Our Services</h2>
-          <p className="text-gray-600 mt-2 max-w-xl mx-auto">
-            Below are some of our services ranging from Engineering and Architectural Building Design. Click on the below to find out more information.
-          </p>
+          <AnimatedContent direction="horizontal">
+            <h2 className="text-3xl font-bold text-blue-900">Our Services</h2>
+          </AnimatedContent>
+          <AnimatedContent direction="horizontal" reverse>
+            <p className="text-gray-600 mt-2 max-w-xl mx-auto">
+              Below are some of our services ranging from Engineering and Architectural Building Design. Click on the below to find out more information.
+            </p>
+          </AnimatedContent>
         </div>
         <hr className="border-l-[2px] mx-auto border-blue-900 w-[2px] h-[60px] mb-6" />
+        <AnimatedContent direction="vertical">
+          {/* Service Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            {services.map((service, index) => (
 
-        {/* Service Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-[#F8F8F8] group p-6 rounded shadow hover:shadow-lg transition duration-300 border-l-4 border-blue-900"
-            >
-              <div className="mb-4">
-                <Image
-                  src={service.image}
-                  alt={service.title}
-                  width={80}
-                  height={80}
-                  className="object-contain mx-auto group-hover:scale-110 transition-all duration-300"
-                />
+              <div
+                key={index}
+                className="bg-[#F8F8F8] group p-6 rounded shadow hover:shadow-lg transition duration-300 border-l-4 border-blue-900"
+              >
+                <div className="mb-4">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    width={80}
+                    height={80}
+                    className="object-contain mx-auto animate-jump group-hover:scale-110 transition-all duration-300"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-blue-900 mb-3 text-center">{service.title}</h3>
+                <p className="text-gray-700 text-center">{service.description}</p>
               </div>
-              <h3 className="text-xl font-semibold text-blue-900 mb-3 text-center">{service.title}</h3>
-              <p className="text-gray-700 text-center">{service.description}</p>
-            </div>
-          ))}
-          <div
 
-            className="bg-white p-6 flex flex-col justify-center items-center rounded shadow bg-gradient-to-r from-[#1C72B5] to-[#1E317E] 
+            ))}
+            <div
+
+
+              className="bg-white p-6 flex flex-col justify-center items-center rounded shadow bg-gradient-to-r from-[#1C72B5] to-[#1E317E] 
              bg-[length:200%_200%] transition-all duration-500 ease-in-out
              hover:animate-gradient-x hover:shadow-lg border-l-4 border-blue-900"
-          >
-            <div className="mb-4 flex items-center justify-center">
+            >
+              <div className="mb-4 flex items-center animate-jump justify-center">
+                <Link href={"/contact_us"}>
+                  <Image
+                    src="/service/s6.png"
+                    alt="call"
+                    width={60}
+                    height={60}
+                    className="object-contain mx-auto"
+                  />
+                </Link>
+              </div>
               <Link href={"/contact_us"}>
-              <Image
-                src="/service/s6.png"
-                alt="call"
-                width={60}
-                height={60}
-                className="object-contain mx-auto"
-              />
+                <h3 className="text-xl font-semibold text-[#91B276] mb-3 text-center">Contact Us</h3>
               </Link>
-            </div>
-            <Link href={"/contact_us"}>
-              <h3 className="text-xl font-semibold text-[#91B276] mb-3 text-center">Contact Us</h3>
-            </Link>
 
+            </div>
           </div>
-        </div>
+        </AnimatedContent>
 
       </div>
     </section>
