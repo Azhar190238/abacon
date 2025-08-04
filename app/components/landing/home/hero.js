@@ -2,6 +2,7 @@
 import Link from "next/link";
 import SplitText from "../../ui/splitText";
 import AnimatedContent from "../../ui/animatedContent";
+import { BackgroundLines } from "../../ui/backgroundlines";
 
 export default function HeroSection() {
   return (
@@ -31,7 +32,7 @@ export default function HeroSection() {
             Building Design, Civil and Structural Engineering Solutions for all types. Give us a call and make a booking.
           </p>
         </AnimatedContent>
-
+        <BackgroundLines>
         <div className="mt-6 flex gap-4">
           <Link href="tel:(02) 8768 0561">
             <button className="bg-[#FFF12C] text-black font-semibold px-6 animate-jump py-2 rounded hover:bg-white transition">
@@ -45,6 +46,7 @@ export default function HeroSection() {
             </button>
           </Link>
         </div>
+        </BackgroundLines>
       </div>
       
     </div>
