@@ -7,7 +7,6 @@ import { FaFacebookF, FaWhatsapp } from "react-icons/fa6";
 import { PiMapPinAreaBold } from "react-icons/pi";
 import { MdOutlineEmail } from "react-icons/md";
 import { BiPhoneCall } from "react-icons/bi";
-// import ContacTactModal from "../../utils/contactModal";
 
 const Footer = () => {
   const [currentYear, setCurrentYear] = useState(null);
@@ -78,7 +77,9 @@ const Footer = () => {
       >
         <div className="flex flex-col md:flex-row justify-center gap-3 lg:gap-0">
           <div className="w-full md:w-[30%] lg:w-[35%]">
+            <Link href={"/"}>
             <Image src="/logo.png" alt="logo" width={253} height={90} />
+            </Link>
             <p className="description1 mt-4 text-black/90 md:max-w-[326px]">
               At Abcon, we provide clients with a complete package of architectural services. We take the project from conception to approval, procuring all the necessary documentation. This streamlines the entire design process
             </p>
