@@ -28,7 +28,7 @@ export default function Free_Consultation() {
         </div>
 
         <a
-          href="#contact"
+          href="/contact_us"
           className="hidden md:inline-block bg-[#E4D829] hover:bg-[#F4F4F4] text-black font-semibold px-6 py-3 rounded transition"
         >
           Free Initial Consultation

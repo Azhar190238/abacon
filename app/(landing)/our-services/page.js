@@ -3,6 +3,7 @@ import CommonHeader from "@/app/components/common/common_section";
 import Free_Initial from '@/app/components/landing/home/free_initial'
 import ServicesSection from "@/app/components/landing/home/services";
 import Image from "next/image";
+import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 
 
@@ -49,11 +50,13 @@ export default function OurService() {
                   At Abcon we work on a variety of services to help get your job done. Below are some of our services which you can inquire about. If you have any further questions, please do not hesitate to get in contact with one of our staff.
                </p>
             </div>
-            <div className="mt-5 md:mt-8 xl:mt-10 flex items-center justify-center">
-               <buton className="px-5 py-3 text-white text-base font-semibold bg-gradient-to-l from-[#1C72B5] to-[#1E317E] bg-[length:200%_200%] transition-all duration-500 ease-in-out hover:animate-gradient-x">
-                  Get Your Free Innitial Custaltation Now
-               </buton>
-            </div>
+            <Link href={"/contact_us"}>
+               <div className="mt-5 md:mt-8 xl:mt-10 flex items-center justify-center">
+                  <buton className="px-5 py-3 text-white text-base font-semibold bg-gradient-to-l from-[#1C72B5] to-[#1E317E] bg-[length:200%_200%] transition-all duration-500 ease-in-out hover:animate-gradient-x">
+                     Get Your Free Innitial Custaltation Now
+                  </buton>
+               </div>
+            </Link>
          </div>
          <div className="mt-6 md:mt-8 xl:mt-11 py-5 md:py-8 xl:py-10 bg-[#EEEEEE]">
             <ServicesSection />

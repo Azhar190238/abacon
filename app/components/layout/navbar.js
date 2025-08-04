@@ -40,6 +40,7 @@ const Navbar = () => {
       <div className="container flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
+          <Link href={"/"}>
           <Image
             src="/logo.png"
             alt="Logo"
@@ -47,6 +48,7 @@ const Navbar = () => {
             height={65}
             className="h-16 w-[180px]"
           />
+          </Link>
         </div>
         <div className="hidden lg:flex items-center gap-6">
           {menuItems.map((item, i) => {

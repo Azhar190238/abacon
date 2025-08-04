@@ -18,7 +18,7 @@ export default function Free_Consultation() {
       {/* Overlay Content */}
       <div className="absolute container inset-0 z-20 flex items-center justify-between">
         <div className="text-white max-w-2xl">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#FEF12E]">Get a Free Initial Consultation</h2>
+          <a href="/contact_us" className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#FEF12E]">Get a Free Initial Consultation</a>
           <div className="border-l-2">
             <p className=" pl-4 text-lg leading-snug max-w-[440px]">
            At ABCON, we provide clients with a complete package of building design and engineering services. We take the project from conception to approval, procuring all the necessary documentation. This streamlines the entire process!

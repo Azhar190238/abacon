@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 const services = [
   {
@@ -74,6 +75,7 @@ export default function ServicesSection() {
              hover:animate-gradient-x hover:shadow-lg border-l-4 border-blue-900"
           >
             <div className="mb-4 flex items-center justify-center">
+              <Link href={"/contact_us"}>
               <Image
                 src="/service/s6.png"
                 alt="call"
@@ -81,8 +83,12 @@ export default function ServicesSection() {
                 height={60}
                 className="object-contain mx-auto"
               />
+              </Link>
             </div>
-            <h3 className="text-xl font-semibold text-[#91B276] mb-3 text-center">Contact Us</h3>
+            <Link href={"/contact_us"}>
+              <h3 className="text-xl font-semibold text-[#91B276] mb-3 text-center">Contact Us</h3>
+            </Link>
+
           </div>
         </div>
 

@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -15,19 +16,24 @@ export default function HeroSection() {
           Excellence and innovation built into every design.
         </p>
 
-        <div className="my-5 w-full h-[120px] border-l-4 border-white pl-4"/>
-         
-         <p className="text-white">
-            Building Design, Civil and Structural Engineering Solutions for all types. Give us a call and make a booking.
-          </p>
+        <div className="my-5 w-full h-[120px] border-l-4 border-white pl-4" />
+
+        <p className="text-white">
+          Building Design, Civil and Structural Engineering Solutions for all types. Give us a call and make a booking.
+        </p>
 
         <div className="mt-6 flex gap-4">
-          <button className="bg-[#FFF12C] text-black font-semibold px-6 py-2 rounded hover:bg-white transition">
-            Call Now!
-          </button>
-          <button className="border border-white text-white px-6 py-2 rounded hover:bg-white hover:text-blue-900 transition">
-            Services
-          </button>
+          <Link href="tel:(02) 8768 0561">
+            <button className="bg-[#FFF12C] text-black font-semibold px-6 py-2 rounded hover:bg-white transition">
+              Call Now!
+            </button>
+          </Link>
+
+          <Link href={"/our-services"}>
+            <button className="border border-white text-white px-6 py-2 rounded hover:bg-white hover:text-blue-900 transition">
+              Services
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -9,8 +9,8 @@ import Footer from "../components/landing/layout/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "ABCON",
-  description: "Shop for summer care products and more",
+  title: "Residential & Custom Building Designers in Sydney NSW",
+  description: "Residential & Custom Building Designers in Sydney NSW (ABCON)",
 }
 
 export default function RootLayout({
