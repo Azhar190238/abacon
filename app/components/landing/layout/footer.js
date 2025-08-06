@@ -87,7 +87,7 @@ const Footer = () => {
 
           <div className="w-full md:w-[70%] lg:w-[65%] mt-5 sm:mt-0">
             <div className="flex flex-col sm:flex-row justify-between">
-              {/* Services */}
+             
               <div className="flex flex-col items-center sm:items-start">
                 <h3 className="text-3xl font-bold text-black mt-4 sm:mt-0">Sitemap</h3>
                 <ul className="mt-5">
