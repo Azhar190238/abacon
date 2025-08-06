@@ -29,7 +29,7 @@ export default function ProcessSection() {
         {/* Left Side - Steps */}
         <div className="flex-1">
           <div className="flex items-center justify-center gap-4 mb-6">
-            <h2 className="text-2xl md:text-3xl font-semibold text-center text-blue-900">ABCON Process</h2>
+            <h2 className="text-2xl md:text-3xl font-anton font-semibold text-center text-blue-900">ABCON Process</h2>
           </div>
         <div className="border-l-4 border-l-blue-900 flex justify-center mx-auto  w-1 h-[60px] mb-6" />
         <AnimatedContent direction="vertical" reverse>

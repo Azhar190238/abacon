@@ -21,7 +21,7 @@ export default function About() {
             <p>
               Our team of Engineers guarantee cost effective and approvable designs for all projects. Drafting and Detailing are conducted according to Australian and Council Specifications
             </p>
-            <p className="mt-4 md:mt-6">Our Civil Design Services include:</p>
+            <p className="mt-4 md:mt-6 font-anton">Our Civil Design Services include:</p>
             <ul className="list-disc pl-5 lg:pl-10 mt-4 md:mt-6">
               <li>Road Design (State/Council/Subdivisional/Private Roads)</li>
               <li>Intersection and Roundabout Design</li>

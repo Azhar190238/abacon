@@ -19,7 +19,7 @@ export default function BenefitsSection() {
               />
             </div>
             <AnimatedContent direction="horizontal" reverse={true}>
-              <h3 className="text-xl font-semibold text-blue-900 mb-2">
+              <h3 className="text-xl font-anton font-semibold text-blue-900 mb-2">
                 Interior Expertise
               </h3>
             </AnimatedContent>
@@ -44,7 +44,7 @@ export default function BenefitsSection() {
               />
             </div>
             <AnimatedContent direction="horizontal" reverse={false}>
-              <h3 className="text-xl font-semibold text-blue-900 mb-2">
+              <h3 className="text-xl font-anton font-semibold text-blue-900 mb-2">
                 Free Consultation
               </h3>
             </AnimatedContent>

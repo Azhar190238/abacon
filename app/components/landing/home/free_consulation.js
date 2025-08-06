@@ -22,7 +22,7 @@ export default function Free_Consultation() {
       <div className="absolute container inset-0 z-20 flex items-center justify-between">
         <div className="text-white max-w-2xl">
           <AnimatedContent direction="horizontal">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">ABCON</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-anton font-bold mb-4">ABCON</h2>
           </AnimatedContent>
           <hr className="border-l-2 border-white w-[2px] h-[40px] mb-4" />
             <AnimatedContent direction="horizontal" reverse >

@@ -62,7 +62,7 @@ export default function OurService() {
             <ServicesSection />
          </div>
          <div className="mt-5 md:mt-8 xl:mt-10 container">
-            <h2 className="text-3xl font-bold text-blue-900 text-center">Abcon Process</h2>
+            <h2 className="text-3xl font-bold text-blue-900 text-center font-anton">Abcon Process</h2>
             <hr className="border-l-[2px] mx-auto border-blue-900 w-[2px] h-[60px] my-6" />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-stretch justify-center gap-16 relative">
                {servicesData.map((item, index) => (
@@ -79,7 +79,7 @@ export default function OurService() {
                            className="object-contain w-full h-full group-hover:scale-125 transition-all duration-300"
                         />
                      </div>
-                     <h3 className="text-lg md:text-xl font-bold text-blue-900 mb-2">{item.title}</h3>
+                     <h3 className="text-lg md:text-xl font-bold text-blue-900 mb-2 font-anton">{item.title}</h3>
                      <p className="mt-4 md:mt-5 lg:mt-8 text-sm text-gray-700">{item.description}</p>
 
                      {/* Arrow (except last item) */}

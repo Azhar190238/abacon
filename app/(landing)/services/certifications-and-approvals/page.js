@@ -16,14 +16,14 @@ export default function About() {
           className="w-full h-[215px]"
         />
         <div className="mt-5 md:mt-8 xl:mt-10 ">
-          <h2 className="text-black font-semibold text-sm">Structural Certifications</h2>
+          <h2 className="text-black font-semibold text-sm font-anton">Structural Certifications</h2>
           <p className="mt-3 md:mt-5 lg:mt-6 max-w-[534px]">
             We offer full engineering certification of all proposed and existing structural works including staged construction, alterations and additions, extensions and fit-outs on existing structures.
           </p>
         </div>
 
         <div className="mt-10 md:mt-14 xl:mt-[72px]">
-          <h2 className="text-black font-semibold text-sm">Civil Certifications</h2>
+          <h2 className="text-black font-semibold text-sm font-anton">Civil Certifications</h2>
           <p className="mt-3 md:mt-5 lg:mt-6 max-w-[544px]">
             We offer full engineering certification of all proposed and existing civil work.
           </p>

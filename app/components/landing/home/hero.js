@@ -13,11 +13,11 @@ export default function HeroSection() {
     
       <div className="relative z-10 container mx-auto px-6 flex flex-col justify-center h-full">
 
-        <h1 className="text-2xl md:text-3xl font-bold text-[#FFF12C] leading-tight">
+        <h1 className="text-2xl md:text-3xl font-anton font-bold text-[#FFF12C] leading-tight">
           <SplitText text="Building Design &" />
           <br />
           <span className="text-white">
-            <SplitText text="Engineering Solutions." delay={100} />
+            <SplitText text="Engineering Solutions." delay={200} />
           </span>
         </h1>
         <AnimatedContent direction="horizontal">

@@ -43,7 +43,7 @@ export default function ServicesSection() {
         {/* Title */}
         <div className="text-center mb-8">
           <AnimatedContent direction="horizontal">
-            <h2 className="text-3xl font-bold text-blue-900">Our Services</h2>
+            <h2 className="text-3xl font-bold font-anton text-blue-900">Our Services</h2>
           </AnimatedContent>
           <AnimatedContent direction="horizontal" reverse>
             <p className="text-gray-600 mt-2 max-w-xl mx-auto">

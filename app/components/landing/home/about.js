@@ -10,7 +10,7 @@ export default function AboutSection() {
         {/* Left: Text */}
         <div className="md:w-1/2 text-white py-6">
           <AnimatedContent direction="horizontal">
-            <h2 className="text-3xl font-bold mb-4">ABCON</h2>
+            <h2 className="text-3xl font-bold font-anton mb-4">ABCON</h2>
           </AnimatedContent>
           <AnimatedContent direction="horizontal" reverse={true}>
             <p className="mb-4">
@@ -29,7 +29,7 @@ export default function AboutSection() {
           </AnimatedContent>
           <hr className="border-l-4 border-white w-1 h-[60px] mb-6" />
        <AnimatedContent direction="vertical" reverse={true}>
-          <h3 className="text-2xl font-semibold mb-3">About Us</h3>
+          <h3 className="text-2xl font-semibold font-anton mb-3">About Us</h3>
           </AnimatedContent>
           <AnimatedContent direction="horizontal" reverse={false}>
           <p className="mb-4">

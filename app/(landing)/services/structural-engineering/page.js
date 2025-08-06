@@ -29,7 +29,7 @@ export default function About() {
             </div>
 
             <div className="mt-10 md:mt-14 xl:mt-[72px]">
-              <h2 className="text-black font-semibold text-sm">Steel Design</h2>
+              <h2 className="text-black font-semibold text-sm font-anton">Steel Design</h2>
               <p className="mt-3 md:mt-5 lg:mt-6 max-w-[534px]">
                 Steel member design for all steel beams and columns, trusses, as well as connection design and all associated drafting and detailing.
               </p>
@@ -37,7 +37,7 @@ export default function About() {
           </div>
           <div className="flex-1">
             <div>
-              <h2 className="text-black font-semibold text-sm">Foundation Design</h2>
+              <h2 className="text-black font-semibold text-sm font-anton">Foundation Design</h2>
               <p className="mt-4 md:mt-6 xl:mt-8">Design of all foundation structures and detailing of all associated civil works to Australian Standards including:</p>
               <ul className="list-disc pl-5 lg:pl-10 mt-4 md:mt-6">
                 <li>Slab on-grade</li>
@@ -49,7 +49,7 @@ export default function About() {
               </ul>
             </div>
             <div className="mt-10 md:mt-14 xl:mt-[72px]">
-              <h2 className="text-black font-semibold text-sm">Timber Design</h2>
+              <h2 className="text-black font-semibold text-sm font-anton">Timber Design</h2>
               <p className="mt-4 md:mt-6 xl:mt-8">Design of timber structural members and relevant connection detailing to Australian Standards, including all:</p>
               <ul className="list-disc pl-5 lg:pl-10 mt-4 md:mt-6">
                 <li>Bearers</li>

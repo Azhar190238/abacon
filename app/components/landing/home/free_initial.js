@@ -21,7 +21,7 @@ export default function Free_Consultation() {
       <div className="absolute container inset-0 z-20 flex items-center justify-between">
         <div className="text-white max-w-2xl">
           <AnimatedContent direction="horizontal">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#FEF12E]">Get a Free Initial Consultation</h1>
+          <h1 className="text-2xl md:text-3xl font-anton lg:text-4xl font-bold mb-4 text-[#FEF12E]">Get a Free Initial Consultation</h1>
           </AnimatedContent>
           <div className="border-l-2 mt-6">
             <AnimatedContent direction="horizontal" reverse>

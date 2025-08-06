@@ -65,7 +65,7 @@ export default function About() {
             <div className="relative z-20 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
               {/* Left Column */}
               <div className="md:w-1/3">
-                <h2 className="text-yellow-400 font-bold text-2xl md:text-3xl leading-tight text-center">
+                <h2 className="text-yellow-400 font-anton font-bold text-2xl md:text-3xl leading-tight text-center">
                   What our <br />
                   Customers say
                 </h2>

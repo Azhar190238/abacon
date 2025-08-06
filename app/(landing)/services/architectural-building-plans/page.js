@@ -18,14 +18,14 @@ export default function About() {
         />
         <div className="mt-5 md:mt-8 xl:mt-10 flex flex-col lg:flex-row gap-5 lg:gap-8">
           <div className="flex-1">
-            <p>
+            <p className="mt-4 md:mt-6 font-anton">
               Maximise your Design opportunities. We at ABCON ensure that every design is convened to the best level both aesthetically and conventionally to our client’s preferences. We deliver Development Applications (DA), Construction Certificates (CC) and complying development certificates (CDC).
               <br /> <br />
               Our Building Designers are experienced in the latest CAD Drafting, 3D BIM Modelling and rendering software’s, directed into Residential, industrial and Commercial sectors.
             </p>
           </div>
           <div className="flex-1">
-            <p>ABCON delivers highly detailed solutions to many projects including:</p>
+            <p className="mt-4 md:mt-6 font-anton">ABCON delivers highly detailed solutions to many projects including:</p>
             <ul className="list-disc pl-5 lg:pl-10 mt-6">
               <li>Alterations & Additions</li>
               <li>Granny Flats / Secondary Dwellings</li>
