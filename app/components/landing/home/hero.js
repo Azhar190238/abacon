@@ -17,7 +17,7 @@ export default function HeroSection() {
           <SplitText text="Building Design &" />
           <br />
           <span className="text-white">
-            <SplitText text="Engineering Solutions." delay={200} />
+            <SplitText text="Engineering Solutions." delay={300} />
           </span>
         </h1>
         <AnimatedContent direction="horizontal">
