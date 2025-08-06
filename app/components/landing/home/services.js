@@ -70,7 +70,7 @@ export default function ServicesSection() {
                     className="object-contain mx-auto animate-jump group-hover:scale-110 transition-all duration-300"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-blue-900 mb-3 text-center">{service.title}</h3>
+                <h3 className="text-xl font-semibold text-blue-900 mb-3 text-center font-anton">{service.title}</h3>
                 <p className="text-gray-700 text-center">{service.description}</p>
               </div>
 

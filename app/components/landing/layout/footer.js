@@ -89,7 +89,7 @@ const Footer = () => {
             <div className="flex flex-col sm:flex-row justify-between">
               {/* Services */}
               <div className="flex flex-col items-center sm:items-start">
-                <h3 className="text-3xl font-bold text-black mt-4 sm:mt-0 font-anton">Sitemap</h3>
+                <h3 className="text-3xl font-bold text-black mt-4 sm:mt-0">Sitemap</h3>
                 <ul className="mt-5">
                   {navLinks1.map((item, index) => (
                     <li key={index} className="flex flex-col items-center sm:items-start last:mb-6 mt-2 descruiption1 text-black/90 hover:text-black cursor-pointer">
@@ -101,7 +101,7 @@ const Footer = () => {
 
               {/* Categories */}
               <div className="flex flex-col items-center sm:items-start ">
-                <h3 className="text-3xl font-bold text-black mt-4 sm:mt-0 font-anton">Trading Hours</h3>
+                <h3 className="text-3xl font-bold text-black mt-4 sm:mt-0">Trading Hours</h3>
                 <div className="mt-5">
                   Monday – Friday: 8:30am – 5:00pm <br />
                   Saturday: By appointment only <br />
@@ -113,7 +113,7 @@ const Footer = () => {
 
               {/* Address */}
               <div className="flex flex-col items-center sm:items-start">
-                <h3 className="text-3xl font-bold text-black mt-4 sm:mt-0 font-anton">Contact Us</h3>
+                <h3 className="text-3xl font-bold text-black mt-4 sm:mt-0">Contact Us</h3>
                 <p className="mt-5">Suite 4, Level 4 402-410 Chapel <br /> Road Bankstown</p>
               </div>
             </div>
